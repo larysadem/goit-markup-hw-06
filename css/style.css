@@ -222,10 +222,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 .modal {
   position: absolute;
@@ -240,6 +240,8 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  z-index: 100;
 }
 
 .modal-content {
@@ -274,6 +276,11 @@ body {
   margin-bottom: 4px;
 }
 
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+
 .form-input {
   width: 100%;
   height: 40px;
@@ -281,18 +288,29 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
 }
 
 .form-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 14px;
+  left: 15px;
+  display: inline-block;
 }
 
 .form-input.comment {
   margin-bottom: 20px;
   height: 120px;
   padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-input:focus {
 }
 
 textarea {
@@ -309,12 +327,19 @@ textarea {
 
   letter-spacing: 0.06em;
   color: var(--white);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
 
   padding: 10px 55px;
+}
+
+.button-send:hover,
+.button-send:focus {
+  background-color: var(--white);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .close {
