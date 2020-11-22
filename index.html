@@ -55,27 +55,42 @@
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <div class="modal-text">
-                        <p>Оставьте свои данные, мы вам перезвоним</p>
+                    <div class="modal-content">
+                        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                         <form class="form">
                             <div class="form-field user-name">
                                 <label class="form-label" for="user-name">Имя</label>
-                                <input class="form-text" type="text" name="user-name" id="user-name">
+                                <input class="form-input" type="text" name="user-name" id="user-name">
+                                <div class="form-icon icon-person">
+                                    <svg width="12" height="12">
+                                        <use href="./images/icon/sprite.svg#icon-person"></use>
+                                    </svg>
+                                </div>
                             </div>
 
                             <div class="form-field tel">
                                 <label class="form-label" for="tel">Телефон</label>
-                                <input class="form-text" type="tel" name="tel" id="tel">
+                                <input class="form-input" type="tel" name="tel" id="tel">
+                                <div class="form-icon icon-phone">
+                                    <svg width="13" height="13">
+                                        <use href="./images/icon/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                </div>
                             </div>
 
                             <div class="form-field email">
                                 <label class="form-label" for="email">Почта</label>
-                                <input class="form-text" type="email" name="email" id="email">
+                                <input class="form-input" type="email" name="email" id="email">
+                                <div class="form-icon icon-email">
+                                    <svg width="15" height="12">
+                                        <use href="./images/icon/sprite.svg#icon-email"></use>
+                                    </svg>
+                                </div>
                             </div>
 
                             <div class="form-field comment">
                                 <label class="form-label" for="comment">Комментарий</label>
-                                <textarea class="form-text comment" name="comment" id="comment" cols="30" rows="10"
+                                <textarea class="form-input comment" name="comment" id="comment" cols="30" rows="10"
                                     placeholder="Введите текст"></textarea>
                             </div>
 
@@ -85,7 +100,7 @@
                                         договора</a>
                                 </label>
                             </div>
-                            <button type="submit">Отправить</button>
+                            <button class="button-send" type="submit">Отправить</button>
                         </form>
                     </div>
                     <button class="close" data-modal-close></button>
@@ -452,6 +467,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-subscribe">
+                <p class="text">Подпишитесь на рассылку</p>
+                <form class="form">
+                    <input class="footer-form-input" type="email" name="subscribe" placeholder="E-mail">
+                    <button class="subscribe" type="submit">
+                        <span class="subscribe-text">Подписаться</span>
+                        <div class="icon-telegram">
+                            <svg width="24" height="24">
+                                <use href="./images/icon/sprite.svg#icon-telegram"></use>
+                            </svg>
+                    </button>
+
+                </form>
+
             </div>
         </div>
 

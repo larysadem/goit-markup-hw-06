@@ -222,10 +222,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .modal {
   position: absolute;
@@ -242,33 +242,39 @@ body {
   border-radius: 4px;
 }
 
-.modal-text {
+.modal-content {
   padding: 40px;
+}
+
+.modal-text {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--title-text-color);
 }
 
 .form {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .form-label {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
-  line-height: 14px;
-
+  line-height: 1.17;
   letter-spacing: 0.01em;
 
-  color: #757575;
   margin-bottom: 4px;
 }
 
-.form-text {
+.form-input {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -277,13 +283,38 @@ body {
   border-radius: 4px;
 }
 
-.form-text.comment {
+.form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form-input.comment {
   margin-bottom: 20px;
   height: 120px;
+  padding: 12px 16px;
 }
 
 textarea {
   resize: none;
+}
+
+.checkbox {
+  margin-bottom: 30px;
+}
+
+.button-send {
+  font-weight: 700;
+  line-height: 1.87;
+
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  padding: 10px 55px;
 }
 
 .close {
@@ -571,7 +602,67 @@ img {
   background-color: var(--accent-color);
 }
 
-.footer .icon-social {
+.footer-social-list {
+  margin-right: 93px;
+}
+
+.footer .form {
+  display: flex;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+
+  padding: 15px;
+  margin-right: 12px;
+}
+
+.subscribe {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  padding: 10px 28px;
+}
+
+.subscribe-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  background-color: var(--white);
+}
+
+.subscribe:hover .subscribe-text,
+.subscribe:focus .subscribe-text {
+  color: var(--accent-color);
+}
+
+.subscribe:hover .icon-telegram,
+.subscribe:focus .icon-telegram {
+  --color1: var(--accent-color);
 }
 
 .filter {
