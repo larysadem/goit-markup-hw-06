@@ -222,10 +222,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .modal {
   position: absolute;
@@ -310,9 +310,13 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus,
-.form-input:hover {
-  color: var(--accent-color);
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
+}
+
+.form-input:focus + .form-icon {
+  --color6: var(--accent-color);
 }
 
 textarea {
@@ -321,6 +325,42 @@ textarea {
 
 .checkbox {
   margin-bottom: 30px;
+  padding: 0px 12px;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 3px;
+  margin-right: 9px;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+  background-repeat: no-repeat;
 }
 
 .button-send {
