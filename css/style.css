@@ -310,7 +310,9 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
+  color: var(--accent-color);
 }
 
 textarea {
