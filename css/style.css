@@ -570,7 +570,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  --color5: var(--white);
+  --color5: var(--icon-color);
   background-color: inherit;
 }
 .social-link:hover,
@@ -663,13 +663,13 @@ img {
 }
 
 .footer .social-link {
-  --color4: var(--white);
+  --color5: var(--white);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer .social-link:hover,
 .footer .social-link:focus {
-  --color4: var(--white);
+  --color5: var(--white);
   background-color: var(--accent-color);
 }
 
@@ -782,8 +782,11 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
 
+.product-list .thumb {
   position: relative;
+  overflow: hidden;
 }
 
 .product-list .item:nth-child(3n) {
